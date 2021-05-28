@@ -1,0 +1,25 @@
+/*============
+	ПАРАЛЛАКС
+============*/
+
+@media screen and (max-width: 1200px) {
+	.bg-prlx {
+	
+			&__clouds {
+				background-size: cover;
+			}
+	
+			&__mountains {
+				background-size: cover;
+			}
+	
+			&__hill {
+				background-size: contain;
+			}
+	
+			&__gradient {
+				background-size: contain;
+				top: 85%;
+			}
+	}
+}

@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*Обнуляющий стиль*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Chronicle Display";
+  src: url("../fonts/Chronicle Display/Chronicle Display Bold.eot");
+  src: local("☺"), url("../fonts/Chronicle Display/Chronicle Display Bold.woff") format("woff"), url("../fonts/Chronicle Display/Chronicle Display Bold.ttf") format("truetype"), url("../fonts/Chronicle Display/Chronicle Display Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Chronicle Display";
+  src: url("../fonts/Chronicle Display/Chronicle Display Semibold.eot");
+  src: local("☺"), url("../fonts/Chronicle Display/Chronicle Display Semibold.woff") format("woff"), url("../fonts/Chronicle Display/Chronicle Display Semibold.ttf") format("truetype"), url("../fonts/Chronicle Display/Chronicle Display Semibold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/gilroy-bold.eot");
+  src: local("☺"), url("../fonts/Gilroy/gilroy-bold.woff") format("woff"), url("../fonts/Gilroy/gilroy-bold.ttf") format("truetype"), url("../fonts/Gilroy/gilroy-bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/gilroy-extrabold.eot");
+  src: local("☺"), url("../fonts/Gilroy/gilroy-extrabold.woff") format("woff"), url("../fonts/Gilroy/gilroy-extrabold.ttf") format("truetype"), url("../fonts/Gilroy/gilroy-extrabold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/gilroy-medium.eot");
+  src: local("☺"), url("../fonts/Gilroy/gilroy-medium.woff") format("woff"), url("../fonts/Gilroy/gilroy-medium.ttf") format("truetype"), url("../fonts/Gilroy/gilroy-medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+/*=============
+	ОБЩИЕ СТИЛИ
+=============*/
+body {
+  background-color: #0B1D26;
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  padding: 65px 60px;
+}
+
+a {
+  color: #fff;
+}
+
+/*============
+	ПАРАЛЛАКС
+============*/
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.bg-prlx {
+  position: relative;
+  height: 100%;
+}
+.bg-prlx__clouds {
+  background: url("/img/bg/clouds.png") 0 0/100% no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.bg-prlx__mountains {
+  position: absolute;
+  top: 40%;
+  background: url("/img/bg/mountains.png") 0 0/100% no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.bg-prlx__hill {
+  position: relative;
+  top: -30%;
+  background: url("/img/bg/hill.png") 0 0/100% no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.bg-prlx__gradient {
+  position: absolute;
+  top: 60%;
+  background: url("/img/bg/gradient.png") 0 0/cover no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/*============
+ОСНОВНЫЕ СТИЛИ
+============*/
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  font-family: Chronicle Display;
+  font-size: 32px;
+  line-height: 38px;
+}
+.header__links {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.header__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__links ul li {
+  margin: 0 40px 0 0;
+}
+.header__links ul li:last-child {
+  margin: 0;
+}
+.header__account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account__avatar {
+  margin: 0 8px 0 0;
+}
+.account__menu {
+  font-family: Gilroy;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+/*============
+	ПАРАЛЛАКС
+============*/
+@media screen and (max-width: 1200px) {
+  .bg-prlx__clouds {
+    background-size: cover;
+  }
+  .bg-prlx__mountains {
+    background-size: cover;
+  }
+  .bg-prlx__hill {
+    background-size: contain;
+  }
+  .bg-prlx__gradient {
+    background-size: contain;
+    top: 85%;
+  }
+}
