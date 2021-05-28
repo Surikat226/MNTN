@@ -145,28 +145,21 @@ a {
   height: 100%;
 }
 .bg-prlx__clouds {
-  background: url("/img/bg/clouds.png") 0 0/100% no-repeat;
+  background: url("../img/bg/clouds.png") 0 0/100% no-repeat;
   height: 100%;
   width: 100%;
 }
 .bg-prlx__mountains {
   position: absolute;
   top: 40%;
-  background: url("/img/bg/mountains.png") 0 0/100% no-repeat;
+  background: url("../img/bg/mountains.png") 0 0/100% no-repeat;
   height: 100%;
   width: 100%;
 }
 .bg-prlx__hill {
   position: relative;
-  top: -30%;
-  background: url("/img/bg/hill.png") 0 0/100% no-repeat;
-  height: 100%;
-  width: 100%;
-}
-.bg-prlx__gradient {
-  position: absolute;
-  top: 60%;
-  background: url("/img/bg/gradient.png") 0 0/cover no-repeat;
+  top: -27%;
+  background: url("../img/bg/gradient-hill.png") 0 0/100% no-repeat;
   height: 100%;
   width: 100%;
 }
@@ -238,8 +231,16 @@ a {
   .bg-prlx__hill {
     background-size: contain;
   }
-  .bg-prlx__gradient {
-    background-size: contain;
-    top: 85%;
+}
+@media screen and (max-width: 576px) {
+  .bg-prlx__clouds {
+    background-size: cover;
+  }
+  .bg-prlx__mountains {
+    background-size: cover;
+  }
+  .bg-prlx__hill {
+    background-size: cover;
+    background-position: 25% 0;
   }
 }

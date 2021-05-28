@@ -16,10 +16,22 @@
 			&__hill {
 				background-size: contain;
 			}
+	}
+}
+@media screen and (max-width: 576px) {
+	.bg-prlx {
 	
-			&__gradient {
-				background-size: contain;
-				top: 85%;
+			&__clouds {
+				background-size: cover;
+			}
+	
+			&__mountains {
+				background-size: cover;
+			}
+	
+			&__hill {
+				background-size: cover;
+				background-position: 25% 0;
 			}
 	}
 }
