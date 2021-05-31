@@ -225,6 +225,10 @@ a {
   line-height: 21px;
 }
 
+.top__subheader {
+  margin: 0 0 800px 0;
+}
+
 .subheader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,7 +255,11 @@ a {
 .titleblock {
   max-width: 950px;
 }
+.titleblock__yellowtxt {
+  margin: 0 0 25px 0;
+}
 .titleblock__title {
+  margin: 0 0 45px 0;
   font-family: "Chronicle Display";
   font-weight: 600;
   font-size: 88px;
@@ -266,6 +274,47 @@ a {
 .titleblock__anchor-link span {
   padding: 5px 35px 5px 0;
   background: url("../img/icons/arrow_downward.svg") right 5px no-repeat;
+}
+
+.progbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+.progbar__numbers {
+  margin: 0 30px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+.progbar__numbers p {
+  margin-bottom: 40px;
+}
+.progbar__numbers p:last-child {
+  margin: 0;
+}
+.progbar__bar {
+  position: relative;
+}
+.progbar__bar:before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 240px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.progbar__bar:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 60px;
+  background-color: #fff;
 }
 
 .contentblock {
@@ -290,6 +339,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 20px 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -316,6 +366,7 @@ a {
 }
 .contentblock__title {
   max-width: 550px;
+  margin: 0 0 25px 0;
   font-family: "Chronicle Display";
   font-weight: 600;
   font-size: 64px;
@@ -323,6 +374,7 @@ a {
 }
 .contentblock__text {
   max-width: 630px;
+  margin: 0 0 25px 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
