@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background-color: #0B1D26;
   color: #fff;
+  font-family: Gilroy;
 }
 
 .wrapper {
@@ -126,7 +127,7 @@ body {
 
 .content {
   max-width: 1460px;
-  margin: 0 auto;
+  margin: 0 250px 200px;
 }
 
 a {
@@ -172,6 +173,9 @@ a {
 /*============
 ОСНОВНЫЕ СТИЛИ
 ============*/
+.header {
+  margin: 0 0 200px 0;
+}
 .header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,12 +188,11 @@ a {
           align-items: center;
 }
 .header__logo {
-  font-family: Chronicle Display;
+  font-family: "Chronicle Display";
   font-size: 32px;
   line-height: 38px;
 }
 .header__links {
-  font-family: Gilroy;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -218,24 +221,75 @@ a {
   margin: 0 8px 0 0;
 }
 .account__menu {
-  font-family: Gilroy;
   font-size: 17px;
   line-height: 21px;
+}
+
+.subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subheader__socials-text {
+  margin: 0 0 25px 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+.subheader__socials-iconlink {
+  margin: 0 0 25px 0;
+}
+.subheader__socials-iconlink:last-child {
+  margin: 0;
+}
+.titleblock {
+  max-width: 950px;
+}
+.titleblock__title {
+  font-family: "Chronicle Display";
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+.titleblock__anchor-link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+}
+.titleblock__anchor-link span {
+  padding: 5px 35px 5px 0;
+  background: url("../img/icons/arrow_downward.svg") right 5px no-repeat;
 }
 
 .contentblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.contentblock__yellowtxt {
+.contentblock__article {
+  margin: 0 115px 0 0;
+}
+.contentblock__yellowtxt, .titleblock__yellowtxt {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Gilroy;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -243,7 +297,7 @@ a {
   text-transform: uppercase;
   color: #FBD784;
 }
-.contentblock__yellowtxt:before {
+.contentblock__yellowtxt:before, .titleblock__yellowtxt:before {
   content: "";
   display: block;
   width: 72px;
@@ -251,20 +305,30 @@ a {
   background-color: #FBD784;
   margin: 0 24px 0 0;
 }
+.contentblock__blocknumber {
+  position: absolute;
+  left: -155px;
+  font-weight: bold;
+  font-size: 240px;
+  line-height: 240px;
+  opacity: 0.1;
+  color: #fff;
+}
 .contentblock__title {
-  font-family: Chronicle Display;
+  max-width: 550px;
+  font-family: "Chronicle Display";
   font-weight: 600;
   font-size: 64px;
   line-height: 77px;
 }
 .contentblock__text {
-  font-family: Gilroy;
+  max-width: 630px;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
 }
 .contentblock__link {
-  font-family: Gilroy;
+  display: inline-block;
   font-size: 18px;
   line-height: 22px;
 }
@@ -272,8 +336,14 @@ a {
   color: #FBD784;
 }
 .contentblock__link span {
-  background: url("../img/icons/arrow.svg") rignt no-repeat;
+  padding-right: 40px;
+  background: url("../img/icons/arrow.svg") right 5px no-repeat;
 }
+.contentblock__image img {
+  width: 100%;
+  height: 100%;
+}
+
 /*============
 	ПАРАЛЛАКС
 ============*/

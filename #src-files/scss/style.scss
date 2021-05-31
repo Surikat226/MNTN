@@ -12,6 +12,7 @@
 body {
 	background-color: #0B1D26;
 	color: #fff;
+	font-family: Gilroy;
 }
 
 .wrapper {
@@ -25,7 +26,7 @@ body {
 
 .content {
 	max-width: 1460px;
-	margin: 0 auto;
+	margin: 0 250px 200px;
 }
 
 a {
@@ -79,6 +80,7 @@ a {
 
 // HEADER
 .header {
+	margin: 0 0 200px 0;
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -86,13 +88,12 @@ a {
 	}
 
 	&__logo {
-		font-family: Chronicle Display;
+		font-family: "Chronicle Display";
 		font-size: 32px;
 		line-height: 38px;
 	}
 
 	&__links {
-		font-family: Gilroy;
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 22px;
@@ -119,12 +120,65 @@ a {
 	}
 
 	&__menu {
-		font-family: Gilroy;
 		font-size: 17px;
 		line-height: 21px;
 	}
 }
 // /HEADER
+
+// SUBHEADER
+.top {
+
+	&__subheader {
+	}
+}
+.subheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__socials {
+	}
+
+	&__socials-text {
+		margin: 0 0 25px 0;
+	  writing-mode: vertical-rl;
+	}
+
+	&__socials-iconlink {
+		margin: 0 0 25px 0;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	&__titleblock {
+	}
+}
+.titleblock {
+	max-width: 950px;
+	&__yellowtxt {
+		@extend .contentblock__yellowtxt;
+	}
+
+	&__title {
+		font-family: "Chronicle Display";
+		font-weight: 600;
+		font-size: 88px;
+		line-height: 100px;
+		text-transform: capitalize;
+	}
+
+	&__anchor-link {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 22px;
+		span {
+			padding: 5px 35px 5px 0;
+			background: url('../img/icons/arrow_downward.svg') right 5px no-repeat;
+		}
+	}
+}
+// /SUBHEADER
 
 // MAIN CONTENT
 .main {
@@ -133,18 +187,19 @@ a {
 }
 .contentblock {
 	display: flex;
-	&__blocknumber {
-
-	}
+	justify-content: space-between;
+	align-items: center;
 
 	&__article {
+		margin: 0 115px 0 0;
 	}
 
 	&__yellowtxt {
+		position: relative;
+
 		display: flex;
 		align-items: center;
 
-		font-family: Gilroy;
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 22px;
@@ -161,36 +216,54 @@ a {
 		}
 	}
 
+	&__blocknumber {
+		position: absolute;
+		left: -155px;
+
+		font-weight: bold;
+		font-size: 240px;
+		line-height: 240px;
+		opacity: 0.1;
+		color: #fff;
+	}
+
 	&__title {
-		font-family: Chronicle Display;
+		max-width: 550px;
+
+		font-family: "Chronicle Display";
 		font-weight: 600;
 		font-size: 64px;
 		line-height: 77px;
 	}
 
 	&__text {
-		font-family: Gilroy;
+		max-width: 630px;
+
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 32px;
 	}
 
 	&__link {
-		font-family: Gilroy;
+		display: inline-block;
 		font-size: 18px;
 		line-height: 22px;
 		a {
 			color: #FBD784;
 		}
 		span {
-			background: url('../img/icons/arrow.svg') rignt no-repeat;
+			padding-right: 40px;
+			background: url('../img/icons/arrow.svg') right 5px no-repeat;
 		}
 	}
 
 	&__image {
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
-
 // /MAIN CONTENT
 
 
