@@ -4,6 +4,9 @@
 // Шрифты
 @import "fonts.scss";
 
+// Миксины
+@import "mixins.scss";
+
 
 /*=============
 	ОБЩИЕ СТИЛИ
@@ -137,6 +140,9 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	&__socials {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	&__socials-text {
@@ -230,8 +236,22 @@ a {
 .main {
 	&__01 {
 	}
+	&__02 {
+		.contentblock__article {
+			margin: 0;
+			order: 2;
+		}
+		.contentblock__image {
+			margin: 0 265px 0 0;
+			order: 1;
+		}
+	}
+	&__03 {
+	}
 }
 .contentblock {
+	margin: 0 0 200px 0;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
