@@ -29,3 +29,23 @@ $secondfont: "Chronicle Display";
 	font-size: 32px;
 	line-height: 38px;
 }
+
+@mixin reversed-flow {
+	.contentblock__article {
+		margin: 0;
+		order: 2;
+	}
+	.contentblock__image {
+		margin: 0 265px 0 0;
+		order: 1;
+	}
+}
+@mixin normal-flow {
+	.contentblock__article {
+		order: 1;
+	}
+	.contentblock__image {
+		margin: 0;
+		order: 2;
+	}
+}

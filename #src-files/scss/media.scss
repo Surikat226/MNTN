@@ -1,7 +1,4 @@
-/*============
-	ПАРАЛЛАКС
-============*/
-
+// ПАРАЛЛАКС
 @media screen and (max-width: 1200px) {
 	.bg-prlx {
 	
@@ -35,3 +32,66 @@
 			}
 	}
 }
+// /ПАРАЛЛАКС
+
+// SUBTITLE
+@media screen and (max-width: 1400px) {
+	.titleblock {
+		&__yellowtxt {
+			margin: 0 0 15px 0;
+		}
+	
+		&__title {
+			margin: 0 0 25px 0;
+			font-size: 40px;
+			line-height: 50px;
+		}
+	
+		&__anchor-link {
+			span {
+			}
+		}
+	}
+}
+// /SUBTITLE
+
+// MAIN CONTENT
+@media screen and (max-width: 1600px) {
+	.main {
+		&__01 {
+		}
+		&__02 {
+			@include normal-flow;
+		}
+		&__03 {
+		}
+	}
+	.contentblock {
+		display: flex;
+		flex-direction: column;
+		&__article {
+			margin: 0;
+		}
+	
+		&__yellowtxt {
+		}
+	
+		&__blocknumber {
+		}
+	
+		&__title {
+		}
+	
+		&__text {
+		}
+	
+		&__link {
+		}
+	
+		&__image {
+			img {
+			}
+		}
+	}
+}
+// /MAIN CONTENT
