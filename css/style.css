@@ -107,6 +107,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-style: normal;
 }
+.contentblock__yellowtxt, .titleblock__yellowtxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FBD784;
+}
+.contentblock__yellowtxt:before, .titleblock__yellowtxt:before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background-color: #FBD784;
+  margin: 0 24px 0 0;
+}
+
 /*=============
 	ОБЩИЕ СТИЛИ
 =============*/
@@ -356,29 +380,8 @@ a {
 .contentblock__article {
   margin: 0 115px 0 0;
 }
-.contentblock__yellowtxt, .titleblock__yellowtxt {
+.contentblock__yellowtxt {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 20px 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  color: #FBD784;
-}
-.contentblock__yellowtxt:before, .titleblock__yellowtxt:before {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 2px;
-  background-color: #FBD784;
-  margin: 0 24px 0 0;
 }
 .contentblock__blocknumber {
   position: absolute;

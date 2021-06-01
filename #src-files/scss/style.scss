@@ -7,6 +7,28 @@
 // Миксины
 @import "mixins.scss";
 
+// Шаблоны
+%yellowtext-n-line {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: #FBD784;
+	&:before {
+		content: '';
+		display: block;
+		width: 72px;
+		height: 2px;
+		background-color: #FBD784;
+		margin: 0 24px 0 0;
+	}
+}
+
 
 /*=============
 	ОБЩИЕ СТИЛИ
@@ -166,7 +188,7 @@ a {
 .titleblock {
 	max-width: 950px;
 	&__yellowtxt {
-		@extend .contentblock__yellowtxt;
+		@extend %yellowtext-n-line;
 		margin: 0 0 25px 0;
 	}
 
@@ -262,24 +284,7 @@ a {
 
 	&__yellowtxt {
 		position: relative;
-		display: flex;
-		align-items: center;
-		margin: 0 0 20px 0;
-
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 22px;
-		letter-spacing: 6px;
-		text-transform: uppercase;
-		color: #FBD784;
-		&:before {
-			content: '';
-			display: block;
-			width: 72px;
-			height: 2px;
-			background-color: #FBD784;
-			margin: 0 24px 0 0;
-		}
+		@extend %yellowtext-n-line;
 	}
 
 	&__blocknumber {
