@@ -454,10 +454,57 @@ a {
           justify-content: space-between;
 }
 .footleftbx__logo {
+  margin: 0 0 25px 0;
   font-family: "Chronicle Display";
   font-size: 32px;
   line-height: 38px;
 }
+.footleftbx__sign {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  max-width: 300px;
+}
+.footleftbx__copyright {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  opacity: 50%;
+}
+
+.footrightbx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footrightbx__column {
+  margin: 0 180px 0 0;
+}
+.footrightbx__column:last-child {
+  margin: 0;
+}
+.footrightbx__ylwtxt {
+  margin: 0 0 24px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #FBD784;
+}
+.footrightbx__txt {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.footrightbx__txt p {
+  margin: 0 0 24px 0;
+}
+.footrightbx__txt p:last-child {
+  margin: 0;
+}
+
 /*============
 	ПАРАЛЛАКС
 ============*/

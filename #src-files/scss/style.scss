@@ -341,24 +341,54 @@ a {
 	}
 
 	&__logo {
+		margin: 0 0 25px 0;
 		@include logo;
 	}
 
 	&__sign {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 32px;
+
+		max-width: 300px;
 	}
 
 	&__copyright {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 32px;
+		opacity: 50%;
 	}
 }
 .footrightbx {
-
+	display: flex;
+	justify-content: space-between;
 	&__column {
+		margin: 0 180px 0 0;
+		&:last-child {
+			margin: 0;
+		}
 	}
 
 	&__ylwtxt {
+		margin: 0 0 24px 0;
+
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		color: #FBD784;
 	}
 
 	&__txt {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 32px;
+		p {
+			margin: 0 0 24px 0;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 }
 // /FOOTER
