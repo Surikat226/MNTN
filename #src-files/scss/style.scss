@@ -4,30 +4,8 @@
 // Шрифты
 @import "fonts.scss";
 
-// Миксины
-@import "mixins.scss";
-
-// Шаблоны
-%yellowtext-n-line {
-	display: flex;
-	align-items: center;
-	margin: 0 0 20px 0;
-
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 22px;
-	letter-spacing: 6px;
-	text-transform: uppercase;
-	color: #FBD784;
-	&:before {
-		content: '';
-		display: block;
-		width: 72px;
-		height: 2px;
-		background-color: #FBD784;
-		margin: 0 24px 0 0;
-	}
-}
+// Переменные, шаблоны, миксины
+@import "templates.scss";
 
 
 /*=============
@@ -113,9 +91,7 @@ a {
 	}
 
 	&__logo {
-		font-family: "Chronicle Display";
-		font-size: 32px;
-		line-height: 38px;
+		@include logo;
 	}
 
 	&__links {
@@ -195,7 +171,7 @@ a {
 	&__title {
 		margin: 0 0 45px 0;
 
-		font-family: "Chronicle Display";
+		font-family: $secondfont;
 		font-weight: 600;
 		font-size: 88px;
 		line-height: 100px;
@@ -305,7 +281,7 @@ a {
 		max-width: 550px;
 		margin: 0 0 25px 0;
 
-		font-family: "Chronicle Display";
+		font-family: $secondfont;
 		font-weight: 600;
 		font-size: 64px;
 		line-height: 77px;
@@ -350,8 +326,6 @@ a {
 	}
 
 	&__left-box {
-		display: flex;
-		flex-direction: column;
 	}
 
 	&__right-box {
@@ -359,8 +333,15 @@ a {
 	}
 }
 .footleftbx {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&__item {
+	}
 
 	&__logo {
+		@include logo;
 	}
 
 	&__sign {

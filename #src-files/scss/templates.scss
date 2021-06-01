@@ -1,0 +1,31 @@
+// Переменные //
+$secondfont: "Chronicle Display";
+
+// Шаблоны //
+%yellowtext-n-line {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	color: #FBD784;
+	&:before {
+		content: '';
+		display: block;
+		width: 72px;
+		height: 2px;
+		background-color: #FBD784;
+		margin: 0 24px 0 0;
+	}
+}
+
+// Миксины //
+@mixin logo {
+	font-family: $secondfont;
+	font-size: 32px;
+	line-height: 38px;
+}
