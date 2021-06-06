@@ -9,7 +9,7 @@ $(function () {
 		$('.bg-prlx__mountains').css('background-position-y', (wScroll * -0.1 + 'px'));
 	}
 
-	///////////////////  Vanilla JS  ////////////////////////
+	///////////////////  Vanilla JS + jQuery  ////////////////////////
 
 	let copyright = document.querySelector('.footleftbx__copyright');
 	let footerbody = document.querySelector('.footer__body');
