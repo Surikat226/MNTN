@@ -11,11 +11,23 @@ $(function () {
 
 	///////////////////  Vanilla JS  ////////////////////////
 
-	const copyright = document.querySelector('.footleftbx__copyright');
-	const footerbody = document.querySelector('.footer__body');
+	let copyright = document.querySelector('.footleftbx__copyright');
+	let footerbody = document.querySelector('.footer__body');
 
-	if (window.matchMedia('(max-width: 992px)').matches) {
-		copyright.append(footerbody)
-	};
+	let media = window.matchMedia('(max-width: 992px)');
+
+	function mediaChange() {
+		if (media.matches) {
+			console.log('<992px')
+		} else {
+			console.log('>992px')
+		}
+	}
+	mediaChange()
+	media.addListener(mediaChange)
+
+
+
+	copyright.append(footerbody)
 
 });
