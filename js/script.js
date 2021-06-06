@@ -18,16 +18,12 @@ $(function () {
 
 	function mediaChange() {
 		if (media.matches) {
-			console.log('<992px')
+			$(copyright).appendTo(footerbody)
 		} else {
-			console.log('>992px')
+			// Нужно задать условие для возврата copyright на прежнее место
 		}
 	}
-	mediaChange()
-	media.addListener(mediaChange)
 
-
-
-	copyright.append(footerbody)
+	media.addListener(mediaChange); // Вешаю обработчик событий на переменную media внутри функции mediaChange (как я понял), таким образом отслеживая boolean значение переменной media (true или false)
 
 });
